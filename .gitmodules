@@ -1,0 +1,27 @@
+[submodule "Obeesdoo"]
+	path = Obeesdoo
+	url = https://github.com/beescoop/Obeesdoo
+[submodule "vertical-cooperative"]
+	path = vertical-cooperative
+	url = https://github.com/coopiteasy/vertical-cooperative
+[submodule "addons"]
+	path = addons
+	url = https://github.com/coopiteasy/addons
+[submodule "procurement-addons"]
+	path = procurement-addons
+	url = https://github.com/coopiteasy/procurement-addons
+[submodule "l10n-belgium"]
+	path = l10n-belgium
+	url = https://www.github.com/OCA/l10n-belgium
+[submodule "mis-builder"]
+	path = mis-builder
+	url = https://www.github.com/OCA/mis-builder
+[submodule "web"]
+	path = web
+	url = https://www.github.com/OCA/web
+[submodule "server-tools"]
+	path = server-tools
+	url = https://github.com/OCA/server-tools
+[submodule "reporting-engine"]
+	path = reporting-engine
+	url = https://github.com/OCA/reporting-engine
