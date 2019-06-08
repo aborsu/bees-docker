@@ -1,0 +1,28 @@
+version: '3'
+services:
+  odoo:
+    build: .
+    depends_on:
+      - db
+    ports:
+      - "8069:8069"
+    volumes:
+      - ./config:/etc/odoo/
+      - ./Obeesdoo:/app/extra-addons/Obeesdoo
+      - ./vertical-cooperative:/app/extra-addons/vertical-cooperative
+      - ./addons:/app/extra-addons/addons
+      - ./procurement-addons:/app/extra-addons/procurement-addons
+      - ./l10n-belgium:/app/extra-addons/l10n-belgium
+      - ./mis-builder:/app/extra-addons/mis-builder
+      - ./web:/app/extra-addons/web
+      - ./server-tools:/app/extra-addons/server-tools
+      - ./reporting-engine:/app/extra-addons/reporting-engine
+
+  db:
+    image: postgres:10
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+
+
